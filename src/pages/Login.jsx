@@ -15,7 +15,7 @@ const Login = () => {
       : { email, password };
 
     try {
-      const response = await fetch(`http://localhost:8080/api/auth/${endpoint}`, {
+      const response = await fetch(`http://localhost:8090/api/auth/${endpoint}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
